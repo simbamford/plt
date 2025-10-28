@@ -1,42 +1,16 @@
 [build-system]
-requires = ["setuptools>=64", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
 
 [project]
 name = "plt"
 version = "0.1.0"
-description = "Thin wrapper around matplotlib.pyplot so you can `import plt`."
+description = "A thin forwarder to matplotlib.pyplot."
 readme = "README.md"
-license = {file = "LICENSE"}
 requires-python = ">=3.8"
-dependencies = [
-    "matplotlib>=3.5",
-]
-keywords = ["matplotlib", "plotting", "pyplot"]
-classifiers = [
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "License :: OSI Approved :: MIT License",
-    "Intended Audience :: Developers",
-    "Topic :: Software Development :: Libraries",
-]
-authors = [
-    { name = "plt contributors" },
-]
+license = { file = "LICENSE" }     # or: license = { text = "MIT" }
+authors = [{ name = "Sim Bamford" }]
+dependencies = ["matplotlib"]
 
 [project.urls]
-Homepage = "https://github.com/plt-dev/plt"
-Source = "https://github.com/plt-dev/plt"
-
-[tool.setuptools]
-package-dir = {"" = "src"}
-include-package-data = true
-
-[tool.setuptools.packages.find]
-where = ["src"]
+Homepage = "https://github.com/simbamford/plt"

@@ -1,30 +1,32 @@
 # plt
 
-A tiny shim that re-exports everything from [`matplotlib.pyplot`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html), letting you simply:
+If you're bored of typing: 
 
-```python
-import plt
-plt.plot([1, 2, 3], [1, 4, 9])
-plt.show()
-```
+`import matplotlib.pyplot as plt`
 
-## Installation
+Simply:
 
 ```bash
 pip install plt
 ```
 
+Then you can just:
+
+```python
+import plt
+```
+
+Then use normally, e.g.:
+
+```python
+plt.plot([1, 2, 3], [1, 4, 9])
+plt.show()
+```
+
+This shim just re-exports everything from [`matplotlib.pyplot`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html).
+
 The package depends on `matplotlib`, so installing it ensures the real plotting
 backend is available.
 
-## Why?
+Thanks to Steven (Yuhang) Wang for releasing the pypi plt project. 
 
-Typing `import matplotlib.pyplot as plt` gets old quickly. This module wraps the
-real pyplot module and forwards every public attribute to it. You keep all of the
-IDE auto-complete behaviour and can even add your own helpers by extending the
-module.
-
-## Contributing
-
-Feel free to add helper functions in `src/plt/__init__.py` and include them in
-`__all__` so they appear in `dir(plt)`.
