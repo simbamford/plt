@@ -1,6 +1,6 @@
 # plt
 
-Does you find it unaesthetic that one of the singularly most useful sub-modules in the whole python ecosystem has a long ungainly name? Now instead of putting:
+Do you find it unaesthetic that one of the most useful sub-modules in the whole python ecosystem has a long ungainly name? Now instead of putting:
 
 `import matplotlib.pyplot as plt`
 
