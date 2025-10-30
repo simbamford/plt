@@ -1,6 +1,6 @@
 # plt
 
-If you're bored of typing: 
+Does you find it unaesthetic that one of the singularly most useful sub-modules in the whole python ecosystem has a long ungainly name? Now instead of putting:
 
 `import matplotlib.pyplot as plt`
 
@@ -24,9 +24,7 @@ plt.show()
 ```
 
 This shim just re-exports everything from [`matplotlib.pyplot`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html).
-
-The package depends on `matplotlib`, so installing it ensures the real plotting
-backend is available.
+This package depends on `matplotlib`.
 
 Thanks to Steven (Yuhang) Wang for releasing the pypi plt project. 
 
